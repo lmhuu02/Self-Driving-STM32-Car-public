@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=LCD.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\LCD -TC:\CooCox\CoIDE\configuration\ProgramData\LCD/arm-gcc-link.ld -g">
+      <target file="LCD.elf" lastModified="15e7e1950e1">
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15e610814bb"/>
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="15e61081519"/>
+         <source file="..\obj\stm32f4xx_wwdg.o" lastModified="15e61081557"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="15e61081596"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15e610815c4"/>
+         <source file="..\obj\stm32f4xx_crc.o" lastModified="15e610815f3"/>
+         <source file="..\obj\stm32f4xx_iwdg.o" lastModified="15e61081622"/>
+         <source file="..\obj\main.o" lastModified="15e7e194edf"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15e610816ce"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="15e6108174a"/>
+         <source file="..\obj\stm32f4xx_dcmi.o" lastModified="15e61081789"/>
+         <source file="..\obj\stm32f4xx_fsmc.o" lastModified="15e610817e6"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15e61081834"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="15e61081892"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15e610818e0"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="15e6108192e"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="15e6108198c"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="15e610819f9"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="15e61081a47"/>
+         <source file="..\obj\stm32f4xx_rtc.o" lastModified="15e61081ad3"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15e61081b8e"/>
+      </target>
+   </processor>
+</history>

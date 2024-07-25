@@ -1,0 +1,424 @@
+/*===================================START FILE=======================================*/
+/*
+ * Power by Le Minh Huu - ICTU _KTMT K19A @copyright
+ * Time: 21/2/2024
+ * Project: control Car use stm32f407vg dv, L298N
+ * IDE: Coocox CoIDE - langage: C
+ * Docx: reference manual RM900. STM32f4xx, Huong dan thuc hanh, giao trinh lap trinh nhung nang cao ICTU - Ngo Thi Vinh.
+ * */
+#include "stm32f4xx.h"
+//#include "motor.h"
+
+/*define function and var*/
+void delay(uint16_t);
+void tien();
+void lui();
+void trai();
+void phai();
+void reset_pin_car();
+void configMotor();
+void EN_Motor();
+void Delay_speed();
+//int readSensor();
+
+void configPA6();
+void configPA7();
+void configPA8();
+void configPA9();
+void configAllPin();
+
+/*=================================MAIN=========================================*/
+int main(void)
+{
+	/*cap xung clock cho port A and B. thuoc AHB1. | or voi 0x0...3 -> GPIOAEN, GPIOBEN*/
+	RCC->AHB1ENR |= (uint32_t)0x00000003;
+	configAllPin();
+	configMotor();
+	EN_Motor();
+//	 configPA6();
+//	 configPA7();
+//	 configPA8();
+//	 configPA9();
+    while(1)
+    {
+    	tien();
+    	delay(10000);
+//    	lui();
+//    	delay(10000);
+//    	trai();
+//    	delay(10000);
+//    	phai();
+//    	delay(10000);
+    }
+}
+
+
+/*==================================FUNCTION========================================*/
+void delay(uint16_t time)
+{
+	while(time--);
+}
+
+void configMotor()
+{
+	//pin 4
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<8))) | (uint32_t)(0x01<8);
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<4);
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<8);
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<8))) | (uint32_t)(0x01<<8);
+	//pin9
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<18))) | (uint32_t)(0x01<18);
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<9);
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<18);
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<8))) | (uint32_t)(0x01<<18);
+}
+
+void EN_Motor()
+{
+	GPIOA->ODR |= (uint16_t)(0x10); //PA4
+	GPIOA->ODR |= (uint16_t)(0x200);	//PA9
+}
+
+void configAllPin()
+{
+	/*chon che do cho output cho PA5,6,7,8,  thuat toan che bit xoa gia tri cu ~0xff va ghi lai gia tri vao dich trai*/
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0xff<<10))) | (uint32_t)(0x55<10);
+	/*stm32f4.rm281/1745 - cau hinh chan day keo, push-pull = 0 OTYPE*/
+	GPIOA->OTYPER |= ~(uint16_t)(0x0f<<5);
+	/*stm32f4.rm282/1745 - config pupdr == 00 no pullup, pull down*/
+	GPIOA->PUPDR |= ~(uint32_t)(0x55<<10);
+	/*stm32f4.rm281/1745 - config speed medium bit bit 10 ->17 = 01*/
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0xff<<10))) | (uint32_t)(0x55<<10);
+}
+
+void configPA6()
+{
+	/*chon che do cho output cho PA6, bit 12 MODER = 1, thuat toan che bit xoa gia tri cu ~0x03 va ghi lai gia tri vao dich trai 12 bit*/
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<12))) | (uint32_t)(0x01<12);
+	/*stm32f4.rm281/1745 - cau hinh chan day keo, push-pull bit 6 = 0 OTYPE*/
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<6);
+	/*stm32f4.rm282/1745 - config pupdr bit 12, 13 == 00 no pullup, pull down*/
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<12);
+	/*stm32f4.rm281/1745 - config speed medium bit 12,13 = 01*/
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<12))) | (uint32_t)(0x01<<12);
+}
+void configPA7()
+{
+	/*chon che do cho output cho PA7, bit 14 MODER = 1, thuat toan che bit xoa gia tri cu ~0x03 va ghi lai gia tri vao dich trai 14 bit*/
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<14))) | (uint32_t)(0x01<14);
+	/*stm32f4.rm281/1745 - cau hinh chan day keo, push-pull bit 7 = 0 OTYPE*/
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<7);
+	/*stm32f4.rm282/1745 - config pupdr bit 14, 15 == 00 no pullup, pull down*/
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<14);
+	/*stm32f4.rm281/1745 - config speed medium bit 14,15 = 01*/
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<14))) | (uint32_t)(0x01<<14);
+}
+void configPA8()
+{
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<16))) | (uint32_t)(0x01<16);
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<8);
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<16);
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<16))) | (uint32_t)(0x01<<16);
+}
+void configPA9()
+{
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x03<<18))) | (uint32_t)(0x01<18);
+	GPIOA->OTYPER |= ~(uint16_t)(0x01<<9);
+	GPIOA->PUPDR |= ~(uint32_t)(0x03<<18);
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x03<<18))) | (uint32_t)(0x01<<18);
+}
+
+
+void tien()
+{
+	/*stm32f4.rm281/1745 - | la or/hoac, giong nhu phep cong. cho bit 6 = 1 ODR*/
+	GPIOA->ODR |= (uint16_t)(0x20);
+	/*& la va, phep nhan. cho bit 7 = 0 ODR*/
+	GPIOA->ODR &= ~(uint16_t)(0x40);
+	/*| la or/hoac, giong nhu phep cong. cho bit 8 = 1 ODR*/
+	GPIOA->ODR |= (uint16_t)(0x80);
+	/*& la va, phep nhan. cho bit 9 = 0 ODR*/
+	GPIOA->ODR &= ~(uint16_t)(0x100);
+}
+void lui()
+{
+	GPIOA->ODR &= ~(uint16_t)(0x40); //PA6
+	GPIOA->ODR |= (uint16_t)(0x80);	//PA7
+	GPIOA->ODR &= ~(uint16_t)(0x100); //PA8
+	GPIOA->ODR |= (uint16_t)(0x200); //PA9
+}
+void trai()
+{
+	/*tat ben trai*/
+	GPIOA->ODR &= ~(uint16_t)(0x40);
+	GPIOA->ODR &= ~(uint16_t)(0x80);
+	/*bat ben phai*/
+	GPIOA->ODR |= (uint16_t)(0x100);
+	GPIOA->ODR &= ~(uint16_t)(0x200);
+}
+void phai()
+{
+	/*bat ben trai*/
+	GPIOA->ODR |= (uint16_t)(0x40);
+	GPIOA->ODR &= ~(uint16_t)(0x80);
+	/*tat ben phai*/
+	GPIOA->ODR &= ~(uint16_t)(0x100);
+	GPIOA->ODR &= ~(uint16_t)(0x200);
+}
+
+void reset_pin_car()
+{
+	/*stm32f4.rm283/1745 - tat tat ca cac chan 6,7,8,9. ve 0 BSRR*/
+	GPIOA->BSRRH |= (uint32_t)(0x0f<<22);
+}
+
+
+/*===================================END FILE=======================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================================START FILE=======================================*/
+/*
+ * Power by Le Minh Huu - ICTU _KTMT K19A @copyright
+ * Time: 21/2/2024
+ * Project: control Car use stm32f407vg dv, L298N
+ * IDE: Coocox CoIDE - langage: C
+ * Docx: reference manual RM900. STM32f4xx, Huong dan thuc hanh, giao trinh lap trinh nhung nang cao ICTU - Ngo Thi Vinh.
+ * */
+#include "stm32f4xx.h"
+#include "Config_Motor.h"
+#include "Config_Led.h"
+
+void delay(uint16_t);
+
+
+void config_Pin_Car()
+{
+	///*cap xung clock cho port A and B. thuoc AHB1. | or voi 0x0...3 -> GPIOAEN, GPIOBEN*/
+	RCC->AHB1ENR |= ((uint32_t)0x00000001);
+
+	//PIN ENA PA0
+	/*chon che do cho output cho PA0, bit 0 MODER = 1, thuat toan che bit xoa gia tri cu ~0x03 va ghi lai gia tri vao dich trai 4 bit*/
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x3<<0))) | (uint32_t)(0x1<0);
+	/*stm32f4.rm281/1745 - cau hinh chan day keo, push-pull bit 2 = 0 OTYPE*/
+	GPIOA->OTYPER &= ~(uint16_t)(0x1<<0);
+	/*stm32f4.rm282/1745 - config pupdr bit 4, 5 == 00 no pullup, pull down*/
+	GPIOA->PUPDR &= ~(uint32_t)(0x3<<0);
+	/*stm32f4.rm281/1745 - config speed medium bit 4,5 = 01*/
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x3<<0))) | (uint32_t)(0x3<<0);
+
+	//PIN ENA PA1
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x3<<2))) | (uint32_t)(0x1<2);
+	GPIOA->OTYPER &= ~(uint16_t)(0x1<<1);
+	GPIOA->PUPDR &= ~(uint32_t)(0x3<<2);
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x3<<2))) | (uint32_t)(0x3<<2);
+
+	RCC->AHB1ENR |= ((uint32_t)0x00000002);
+	//PIN IN1 PB11
+	GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x3<<22))) | (uint32_t)(0x1<22);
+	GPIOB->OTYPER &= ~(uint16_t)(0x1<<11);
+	GPIOB->PUPDR &= ~(uint32_t)(0x3<<22);
+	GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~((uint32_t)(0x3<<22))) | (uint32_t)(0x3<<22);
+
+	//PIN IN2 PB12
+	GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x3<<24))) | (uint32_t)(0x1<24);
+	GPIOB->OTYPER &= ~(uint16_t)(0x1<<12);
+	GPIOB->PUPDR &= ~(uint32_t)(0x3<<24);
+	GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~((uint32_t)(0x3<<24))) | (uint32_t)(0x3<<24);
+
+	//PIN IN3 PB13
+	GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x03<<26))) | (uint32_t)(0x01<26);
+	GPIOB->OTYPER &= ~(uint16_t)(0x01<<13);
+	GPIOB->PUPDR &= ~(uint32_t)(0x03<<26);
+	GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~((uint32_t)(0x03<<26))) | (uint32_t)(0x03<<26);
+
+	//PIN IN4 PB14
+	GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x03<<28))) | (uint32_t)(0x01<28);
+	GPIOB->OTYPER &= ~(uint16_t)(0x01<<14);
+	GPIOB->PUPDR &= ~(uint32_t)(0x03<<28);
+	GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~((uint32_t)(0x03<<28))) | (uint32_t)(0x01<<28);
+}
+
+
+void tien()
+{
+	/*stm32f4.rm281/1745 - | la or/hoac, giong nhu phep cong. cho bit 4 = 1 ODR*/
+	GPIOB->ODR |= (uint16_t)(0x1<<11); //PB11
+	/*& la va, phep nhan. cho bit 5 = 0 ODR*/
+	GPIOB->ODR &= ~(uint16_t)(0x1<<12); //PB12
+	/*| la or/hoac, giong nhu phep cong. cho bit 6 = 1 ODR*/
+	GPIOB->ODR |= (uint16_t)(0x1<<13); //PB13
+	/*& la va, phep nhan. cho bit 7 = 0 ODR*/
+	GPIOB->ODR &= ~(uint16_t)(0x1<<14); //PB14
+}
+
+
+void EN_Motor()
+{
+	GPIOA->ODR |= (uint16_t)(0x001); //PA0
+	GPIOA->ODR |= (uint16_t)(0x002);//PA1
+}
+void DS_Motor(){
+	GPIOA->ODR &= ~(uint16_t)(0x001); //PA0
+	GPIOA->ODR &= ~(uint16_t)(0x002);//PA1
+}
+void delay_sp(unsigned int time)
+{
+	while(time--);
+}
+
+void Delay_speed(unsigned int t){
+	while(t--)
+	{
+		EN_Motor();
+		delay_sp(700);
+		DS_Motor();
+		delay_sp(800);
+	}
+}
+
+
+void ENBLE_Motor(){
+	RCC->CFGR |= 0<<10;   // set APB1 = 16 MHz
+
+	RCC->AHB1ENR |= ((uint32_t)0x00000001);
+
+
+			  // PA0
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x3 << 0))) | (uint32_t)(0x1 << 0);
+	GPIOA->OTYPER &= ~(uint16_t)(0x1 << 0) ;
+	GPIOA->PUPDR &= ~(uint32_t)(0x3 << 0) ;
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x3 << 0))) | (uint32_t)(0x3 << 0);
+			  // PA1
+	GPIOA->MODER = (GPIOA->MODER & ~((uint32_t)(0x3 << 2))) | (uint32_t)(0x1 << 2);
+	GPIOA->OTYPER &= ~(uint16_t)(0x1 << 1) ;
+	GPIOA->PUPDR &= ~(uint32_t)(0x3 << 2) ;
+	GPIOA->OSPEEDR = (GPIOA->OSPEEDR & ~((uint32_t)(0x3 << 2))) | (uint32_t)(0x3 << 2);
+}
+
+void Config_Motor(){
+
+	  RCC->AHB1ENR |= ((uint32_t)0x00000002);
+
+	  // PB11
+	  GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x3 << 22))) | (uint32_t)(0x1 << 22);
+	  GPIOB->OTYPER &= ~(uint16_t)(0x1 << 11) ;
+	  GPIOB->PUPDR &= ~(uint32_t)(0x3 << 22) ;
+	  GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~((uint32_t)(0x3 << 22))) | (uint32_t)(0x3 << 22);
+
+	  //PB12
+
+	  GPIOB->MODER = (GPIOB->MODER & ~((uint32_t)(0x3 << 24))) | (uint32_t)(0x1 << 24);
+	  GPIOB->OTYPER &= ~(uint16_t)(0x1 << 12) ;
+	  GPIOB->PUPDR &= ~(uint32_t)(0x3 << 24) ;
+	  GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~(uint32_t)(0x3 << 24)) | (uint32_t)(0x3 << 24);
+
+	 // PB13
+		GPIOB->MODER = (GPIOB->MODER & ~(uint32_t)(0x3 << 26)) | (uint32_t) (0x1 << 26);
+		GPIOB->OTYPER &= ~(uint16_t)(0x1 << 13) ;
+		GPIOB->PUPDR &= ~(uint32_t)(0x3 << 26) ;
+		GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~(uint32_t)(0x3 << 26))| (uint32_t) (0x3 << 26);
+
+	// PB14
+		GPIOB->MODER = (GPIOB->MODER & ~(uint32_t)(0x3 << 28)) | (uint32_t) (0x1 << 28);
+		GPIOB->OTYPER &= ~(uint16_t)(0x1 << 14) ;
+		GPIOB->PUPDR &= ~(uint32_t)(0x3 << 28) ;
+		GPIOB->OSPEEDR = (GPIOB->OSPEEDR & ~(uint32_t)(0x3 << 28)) | (uint32_t) (0x3 << 28);
+
+}
+
+
+void tien1(){
+	GPIOB->ODR &= ~(uint16_t)(0x01 <<11);
+	GPIOB->ODR |= (uint16_t)(0x01 <<12);
+	GPIOB->ODR &= ~(uint16_t)(0x01 <<13);
+	GPIOB->ODR |= (uint16_t)(0x01 <<14);
+}
+void Motor_Enable(){
+
+	GPIOA->ODR |=(uint16_t)0x001;
+	GPIOA->ODR |=(uint16_t)0x002;
+}
+void Motor_Disable(){
+
+	GPIOA->ODR &=~(uint16_t)0x001;
+	GPIOA->ODR &=~(uint16_t)0x002;
+}
+
+void Turn_motor(uint16_t time){
+	while(time--){
+		Motor_Enable();
+		delay(700);
+		Motor_Disable();
+		delay(700);
+	}
+}
+
+
+/*=================================MAIN=========================================*/
+int main(void)
+{
+//	RCC->AHB1ENR |= ((uint32_t)0x00000003);
+//	RCC->CFGR |= 0<<10;
+	setup_Led();
+//	config_Pin_Car();
+	ENBLE_Motor();
+	Config_Motor();
+
+//	EN_Motor();
+
+    while(1)
+    {
+//    	EN_Motor();
+    	tien1();
+//    	delay(10000);
+    	Turn_motor(4000);
+    	tien1();
+    	Turn_motor(4000);
+//		tien();
+//    	delay(2000);
+    }
+}
+
+
+/*==================================FUNCTION========================================*/
+void delay(uint16_t time)
+{
+	while(time--);
+}
+
+/*===================================END FILE=======================================*/
+

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=dem 0-9.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\dem 0-9 -TC:\CooCox\CoIDE\configuration\ProgramData\dem 0-9/arm-gcc-link.ld -g">
+      <target file="dem 0-9.elf" lastModified="14aeaaf79d0">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14ae96a8328"/>
+         <source file="..\obj\main.o" lastModified="14aeaaf7675"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14ae96a8481"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14ae96a865d"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="14ae96a879d"/>
+      </target>
+   </processor>
+</history>

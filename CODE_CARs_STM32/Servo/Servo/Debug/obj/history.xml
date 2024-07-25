@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407IG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32 -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Servo\cmsis_lib -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Servo\cmsis -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Servo\cmsis_lib\include -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Servo -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Servo\cmsis_boot">
+      <target file="stm32f4xx_rcc.o" lastModified="19059b04851">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="18cf7e54130"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="19059b04a02">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="18cf7e54900"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="19059b04922">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="18cf7e558a0"/>
+      </target>
+      <target file="main.o" lastModified="19059b11d43">
+         <source file="..\..\..\main.c" lastModified="19059b118ff"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="19059b045a6">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="18cf7e54130"/>
+      </target>
+   </processor>
+</history>

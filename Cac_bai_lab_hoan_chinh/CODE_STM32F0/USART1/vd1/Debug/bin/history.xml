@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=vd1.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\vd1 -TC:\CooCox\CoIDE\configuration\ProgramData\vd1/arm-gcc-link.ld -g">
+      <target file="vd1.elf" lastModified="14b617d5f6a">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14b617c8a41"/>
+         <source file="..\obj\main.o" lastModified="14b617d5d77"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14b617c8a9f"/>
+         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="14b617c8aed"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14b617c8b4a"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="14b617c8bd7"/>
+      </target>
+   </processor>
+</history>

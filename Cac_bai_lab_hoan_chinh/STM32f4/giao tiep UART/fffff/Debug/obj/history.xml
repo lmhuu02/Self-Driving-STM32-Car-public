@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\giao tiep UART\cmsis_boot -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\giao tiep UART\cmsis_lib -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\giao tiep UART -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4 -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\giao tiep UART\cmsis -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\giao tiep UART\cmsis_lib\include">
+      <target file="stm32f4xx_rcc.o" lastModified="14ae90f811d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="144b052f2b0"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14ae90f83f4">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144b052f2b0"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14ae90f82bc">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="144b0532190"/>
+      </target>
+      <target file="main.o" lastModified="14ae916188a">
+         <source file="..\..\..\main.c" lastModified="14ae91613d0"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="14ae90f7e22">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="144b052f2b0"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14ae90f7ee0">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="144b052f2b0"/>
+      </target>
+   </processor>
+</history>

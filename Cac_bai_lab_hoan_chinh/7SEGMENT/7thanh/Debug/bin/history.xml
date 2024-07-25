@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=7thanh.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\7thanh -TC:\CooCox\CoIDE\configuration\ProgramData\7thanh/arm-gcc-link.ld -g">
+      <target file="7thanh.elf" lastModified="14fc4bd1f2b">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14fc4bd19f5"/>
+         <source file="..\obj\main.o" lastModified="14fc4bd1a38"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14fc4bd1a5b"/>
+         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="14fc4bd1b11"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14fc4bd1b6f"/>
+      </target>
+   </processor>
+</history>

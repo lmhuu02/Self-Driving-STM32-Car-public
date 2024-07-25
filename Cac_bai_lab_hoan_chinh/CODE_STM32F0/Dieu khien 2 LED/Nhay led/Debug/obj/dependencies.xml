@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\PHAN MEM- TAI LIEU STM\STM32F0 /ID:\PHAN MEM- TAI LIEU STM\STM32F0\Dieu khien 2 LED\stm_lib /ID:\PHAN MEM- TAI LIEU STM\STM32F0\Dieu khien 2 LED\cmsis_boot /ID:\PHAN MEM- TAI LIEU STM\STM32F0\Dieu khien 2 LED /ID:\PHAN MEM- TAI LIEU STM\STM32F0\Dieu khien 2 LED\cmsis_core /ID:\PHAN MEM- TAI LIEU STM\STM32F0\Dieu khien 2 LED\stm_lib\inc">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="14ae3abf9f6">
+      </source>
+      <source file="..\..\..\cmsis_core\core_cm0.h" lastModified="14ae3abfe1b">
+         <include file="..\..\..\cmsis_core\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_core\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="14ae3abfa0a">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx_conf.h" lastModified="14ae3ac3c68">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="14ae3abfde8">
+         <include file="..\..\..\cmsis_core\core_cm0.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f0xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f0xx_conf.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="14ae98567a0">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmInstr.h" lastModified="14ae3ac020d">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="14ae3abf9ce">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmFunc.h" lastModified="14ae3ac0208">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h" lastModified="14ae3abfa48">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14ae3abfa4e">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="14ae3abf9ce">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="14ae3abfa0a">
+      </source>
+   </includePath>
+   <includePath signature="/ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0\Dieu khien 2 LED\cmsis_core /ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0 /ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0\Dieu khien 2 LED\stm_lib\inc /ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0\Dieu khien 2 LED /ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0\Dieu khien 2 LED\stm_lib /ID:\NHOM SMT\PHAN MEM- TAI LIEU\STM32F0\Dieu khien 2 LED\cmsis_boot">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="14ae3abf9f6">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="14ae3abfa0a">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="14ae98567a0">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="14ae3abf9ce">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h" lastModified="14ae3abfa48">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14ae3abfa4e">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="14ae3abf9ce">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="14ae3abfa0a">
+      </source>
+   </includePath>
+</dependencies>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\Chuong trinh uart tren stm32\cmsis_boot -I..\..\..\workspace -I..\..\..\workspace\Chuong trinh uart tren stm32\stm_lib\inc -I..\..\..\workspace\Chuong trinh uart tren stm32\stm_lib -I..\..\..\workspace\Chuong trinh uart tren stm32 -I..\..\..\workspace\Chuong trinh uart tren stm32\cmsis_core">
+      <target file="system_stm32f0xx.o" lastModified="14fe9ef8d2f">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="14d33c666b0"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="14fe9ef8b2e">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="14d33c666b0"/>
+      </target>
+      <target file="stm32f0xx_usart.o" lastModified="14fe9ef8c85">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_usart.c" lastModified="14d33c67650"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="14fe9ef894d">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="14d33c666b0"/>
+      </target>
+      <target file="main.o" lastModified="14ff30d6dcf">
+         <source file="..\..\..\main.c" lastModified="14ff30d69ad"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="14fe9ef8a48">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="14d33c666b0"/>
+      </target>
+   </processor>
+</history>

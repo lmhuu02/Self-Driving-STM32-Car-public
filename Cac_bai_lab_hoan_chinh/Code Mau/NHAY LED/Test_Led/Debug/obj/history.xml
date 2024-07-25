@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F030R8T6 -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Chuong trinh ARM\NHAY LED\cmsis_boot -ID:\Chuong trinh ARM\NHAY LED\stm_lib\inc -ID:\Chuong trinh ARM\NHAY LED\cmsis_core -ID:\Chuong trinh ARM\NHAY LED -ID:\Chuong trinh ARM -ID:\Chuong trinh ARM\NHAY LED\stm_lib">
+      <target file="system_stm32f0xx.o" lastModified="144d95ff8c8">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="1434cdd92d8"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="144d95ff881">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="1434cdd92ce"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="144d95ff7ca">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="1434cdd92e1"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="144d95ff826">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="1434cdd92d5"/>
+      </target>
+      <target file="main.o" lastModified="144d95ff80d">
+         <source file="..\..\..\main.c" lastModified="144d95d2097"/>
+      </target>
+   </processor>
+</history>

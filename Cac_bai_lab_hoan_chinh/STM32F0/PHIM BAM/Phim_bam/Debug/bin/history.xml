@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=Phim_bam.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Phim_bam -TC:\CooCox\CoIDE\configuration\ProgramData\Phim_bam/arm-gcc-link.ld -g">
+      <target file="Phim_bam.elf" lastModified="14aeace2ed4">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14ae4121a21"/>
+         <source file="..\obj\main.o" lastModified="14aeace2b4b"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14ae4121b69"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14ae4121c91"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="14ae4121d7b"/>
+      </target>
+   </processor>
+</history>

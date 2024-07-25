@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Code_Car_stm32\cmsis_lib\include -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32 -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Code_Car_stm32\cmsis_lib -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Code_Car_stm32\cmsis -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Code_Car_stm32\cmsis_boot -ID:\1.Workspace\STM32_Huu_Docx_2024\CODE_CARs_STM32\Code_Car_stm32 -ID:\1.Workspace\STM32_Huu_Docx_2024">
+      <target file="syscalls.o" lastModified="1904e8231d1">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="19021ffa828"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="1904e822ff0">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="19021fff5f2"/>
+      </target>
+      <target file="stm32f4xx_pwr.o" lastModified="1904e822da2">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="19021ffd6d1"/>
+      </target>
+      <target file="configPinOut.o" lastModified="1905e12a4eb">
+         <source file="..\..\..\configPinOut.c" lastModified="1905df2970c"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="1904e82334e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="19022002b30"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1904e8230ae">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="19021ffc5f3"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1904e822de1">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="19021ffc5d4"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="1904e822d43">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="190220042c8"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="1904e82321d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="1902200103b"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="1904e822cce">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="19022006247"/>
+      </target>
+      <target file="main.o" lastModified="19062261484">
+         <source file="..\..\..\main.c" lastModified="1906226111f"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1904e822f9b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="19021ffc5c7"/>
+      </target>
+      <target file="misc.o" lastModified="1904e823265">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1902201ec53"/>
+      </target>
+   </processor>
+</history>

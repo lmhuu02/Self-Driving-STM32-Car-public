@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F303VC -DSTM32F30X -I..\..\..\workspace\PWMF3\cmsis_boot -I..\..\..\workspace -I..\..\..\workspace\PWMF3\cmsis -I..\..\.. -I..\..\..\workspace\PWMF3\cmsis_lib -I..\..\..\workspace\PWMF3\cmsis_lib\include -I..\..\..\workspace\PWMF3">
+      <target file="startup_stm32f30x.o" lastModified="1518076bc02">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="1518038522f"/>
+      </target>
+      <target file="stm32f30x_gpio.o" lastModified="1518076ba6c">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="15180385200"/>
+      </target>
+      <target file="system_stm32f30x_temp.o" lastModified="1518076baf8">
+         <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="1518038524e"/>
+      </target>
+      <target file="stm32f30x_tim.o" lastModified="1518076bbe2">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="15180387d92"/>
+      </target>
+      <target file="main.o" lastModified="1518076baaa">
+         <source file="..\..\..\main.c" lastModified="1518076b7cd"/>
+      </target>
+      <target file="stm32f30x_rcc.o" lastModified="1518076ba1e">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="1518038521f"/>
+      </target>
+   </processor>
+</history>

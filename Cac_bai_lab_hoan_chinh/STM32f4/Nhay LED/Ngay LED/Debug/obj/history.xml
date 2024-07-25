@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\Nhay LED\cmsis_boot -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\Nhay LED -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\Nhay LED\cmsis_lib -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4 -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\Nhay LED\cmsis_lib\include -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32f4\Nhay LED\cmsis">
+      <target file="stm32f4xx_rcc.o" lastModified="14ae8d97d32">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1493f43ab87"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14ae8d97f1c">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1493f43ab62"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14ae8d97e36">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1493f43ab15"/>
+      </target>
+      <target file="main.o" lastModified="14ae8e025d8">
+         <source file="..\..\..\main.c" lastModified="14ae8e0210a"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14ae8d97aee">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1493f43ab2b"/>
+      </target>
+   </processor>
+</history>

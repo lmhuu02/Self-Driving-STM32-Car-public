@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=i2cf051.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\i2cf051 -TC:\CooCox\CoIDE\configuration\ProgramData\i2cf051/arm-gcc-link.ld -g">
+      <target file="i2cf051.elf" lastModified="1516124ea60">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="1515c17ac10"/>
+         <source file="..\obj\main.o" lastModified="1516124ea60"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="1515c17ac10"/>
+         <source file="..\obj\stm32f0xx_i2c.o" lastModified="1515c17ac10"/>
+         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="1515c17ac10"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="1515c17b3e0"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="1515c17b3e0"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="1515c17b3e0"/>
+         <source file="..\obj\stm32f0xx_it.o" lastModified="1515c17b3e0"/>
+         <source file="..\obj\stm32f0xx_exti.o" lastModified="1515c17b3e0"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="1515c17b3e0"/>
+      </target>
+   </processor>
+</history>

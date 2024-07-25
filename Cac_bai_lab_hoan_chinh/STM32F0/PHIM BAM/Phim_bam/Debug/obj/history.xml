@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F030R8T6 -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0 -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0\PHIM BAM\stm_lib\inc -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0\PHIM BAM\cmsis_boot -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0\PHIM BAM -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0\PHIM BAM\stm_lib -I..\..\..\..\..\Users\Admin\Desktop\BAI THUC HANH STM\STM32F0\PHIM BAM\cmsis_core">
+      <target file="system_stm32f0xx.o" lastModified="14ae4121d7b">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="1434d469395"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="14ae4121c91">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="1434d46937c"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="14ae4121a21">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="1434d46939e"/>
+      </target>
+      <target file="main.o" lastModified="14aeace2b4b">
+         <source file="..\..\..\main.c" lastModified="14aeace26d4"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="14ae4121b69">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="1434d469391"/>
+      </target>
+   </processor>
+</history>

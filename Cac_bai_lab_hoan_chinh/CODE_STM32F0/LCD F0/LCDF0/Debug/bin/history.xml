@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=LCDF0.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\LCDF0 -TC:\CooCox\CoIDE\configuration\ProgramData\LCDF0/arm-gcc-link.ld -g">
+      <target file="LCDF0.elf" lastModified="16aa218546c">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="16aa21851dc"/>
+         <source file="..\obj\main.o" lastModified="16aa218521b"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="16aa218521b"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="16aa2185269"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="16aa21852a7"/>
+      </target>
+   </processor>
+</history>

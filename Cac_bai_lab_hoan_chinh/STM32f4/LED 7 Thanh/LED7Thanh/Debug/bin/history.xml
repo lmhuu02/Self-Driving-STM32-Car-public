@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=LED7Thanh.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\LED7Thanh -TC:\CooCox\CoIDE\configuration\ProgramData\LED7Thanh/arm-gcc-link.ld -g">
+      <target file="LED7Thanh.elf" lastModified="14ae8e77d74">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14ae744f420"/>
+         <source file="..\obj\main.o" lastModified="14ae8e778a1"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14ae744f633"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14ae744f76b"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14ae744f855"/>
+      </target>
+   </processor>
+</history>

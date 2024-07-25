@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_blue">
+    <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+         <TextView
+             android:id="@+id/textView7"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#9797FF"
+             android:gravity="center"
+             android:text="LẬP TRÌNH BLUETOOTH CHO THIẾT BỊ DI ĐỘNG"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#ffffff"
+             android:textStyle="bold" />
+    </LinearLayout>
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp">
+       <TableRow 
+           android:layout_height="match_parent"
+           android:layout_width="match_parent">
+           <Button
+               android:id="@+id/button_bt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mau"
+               android:layout_marginLeft="20dp"
+               android:text="On" />
+            <Button
+               android:id="@+id/button_search_devices"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mau"
+               android:layout_marginLeft="20dp"
+               android:text="Search" />
+            <Button
+               android:id="@+id/button_quit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mau"
+               android:layout_marginLeft="20dp"
+               android:text="Quit" />
+       </TableRow>
+
+       <ImageView
+           android:id="@+id/im"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:src="@drawable/bluetooth" 
+           android:layout_gravity="center"/>
+
+       <EditText
+           android:id="@+id/text1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:hint="Nhập kí tự muốn gửi">
+       </EditText>
+       <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp">
+       <TableRow 
+           android:layout_height="match_parent"
+           android:layout_width="match_parent">
+
+         <Button
+               android:id="@+id/button_send"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mau"
+               android:layout_marginLeft="65dp"
+               android:text="Send" />
+          <Button
+               android:id="@+id/button_Clear"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/mau"
+               android:layout_marginLeft="20dp"
+               android:text="Clear" />
+          </TableRow>
+          </LinearLayout>
+           <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp">
+       <TableRow 
+           android:layout_height="match_parent"
+           android:layout_width="match_parent">
+
+        <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Kí tự nhận được từ STM32:  "
+                   android:textStyle="italic" />
+                <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Kí tự nhận được" />
+          </TableRow>
+          </LinearLayout>
+         
+       
+   </LinearLayout>
+</LinearLayout>

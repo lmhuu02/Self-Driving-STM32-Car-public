@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IE:\STM-NgoVinh\Cac bai lab hoan chinh\LCDF0\stm32_lib\inc -IE:\STM-NgoVinh\Cac bai lab hoan chinh\LCDF0\cmsis_core -IE:\STM-NgoVinh\Cac bai lab hoan chinh\LCDF0\cmsis_boot -IE:\STM-NgoVinh\Cac bai lab hoan chinh\LCDF0 -IE:\STM-NgoVinh\Cac bai lab hoan chinh\LCDF0\stm32_lib -IE:\STM-NgoVinh\Cac bai lab hoan chinh">
+      <target file="stm32f0xx_gpio.o" lastModified="1517f856749">
+         <source file="..\..\..\stm32_lib\src\stm32f0xx_gpio.c" lastModified="14f86ebbb40"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="1517f856630">
+         <source file="..\..\..\stm32_lib\src\stm32f0xx_rcc.c" lastModified="14f86ebbb40"/>
+      </target>
+      <target file="system_stm32f0xx_temp.o" lastModified="1517f85670a">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx_temp.c" lastModified="14f86ebbb40"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="1517f8566cc">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="14f86ebbb40"/>
+      </target>
+      <target file="main.o" lastModified="1517f8566bc">
+         <source file="..\..\..\main.c" lastModified="1517f8563fe"/>
+      </target>
+   </processor>
+</history>

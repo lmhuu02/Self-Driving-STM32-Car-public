@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407IG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IE:\STM-NgoVinh\Programs\lcdf4\cmsis_lib\include -IE:\STM-NgoVinh\Programs\lcdf4 -IE:\STM-NgoVinh\Programs\lcdf4\cmsis -IE:\STM-NgoVinh\Programs\lcdf4\cmsis_boot -IE:\STM-NgoVinh\Programs -IE:\STM-NgoVinh\Programs\lcdf4\cmsis_lib">
+      <target file="stm32f4xx_rcc.o" lastModified="15142092ff8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14fb14b99f0"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15142093094">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14fb14b99f0"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="15142093046">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14fb14c5d40"/>
+      </target>
+      <target file="main.o" lastModified="151421484a1">
+         <source file="..\..\..\main.c" lastModified="1514214741d"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15142092f4c">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14fb14b99f0"/>
+      </target>
+   </processor>
+</history>

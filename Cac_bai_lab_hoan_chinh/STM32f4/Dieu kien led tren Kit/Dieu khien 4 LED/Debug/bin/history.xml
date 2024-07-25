@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Dieu khien 4 LED.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Dieu khien 4 LED -TC:\CooCox\CoIDE\configuration\ProgramData\Dieu khien 4 LED/arm-gcc-link.ld -g">
+      <target file="Dieu khien 4 LED.elf" lastModified="15e2474c2d4">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15e2474be1d"/>
+         <source file="..\obj\main.o" lastModified="15e2474bec5"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15e2474bf73"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15e2474bffc"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15e2474c04d"/>
+      </target>
+   </processor>
+</history>

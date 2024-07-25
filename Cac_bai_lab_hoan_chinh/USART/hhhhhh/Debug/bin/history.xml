@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=hhhhhh.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\hhhhhh -TC:\CooCox\CoIDE\configuration\ProgramData\hhhhhh/arm-gcc-link.ld -g">
+      <target file="hhhhhh.elf" lastModified="14ff30d7022">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14fe9ef894d"/>
+         <source file="..\obj\main.o" lastModified="14ff30d6dcf"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14fe9ef8a48"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14fe9ef8b2e"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="14fe9ef8c85"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="14fe9ef8d2f"/>
+      </target>
+   </processor>
+</history>

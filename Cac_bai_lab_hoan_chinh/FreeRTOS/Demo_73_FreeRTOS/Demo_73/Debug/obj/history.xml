@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -IE:\STM-NgoVinh\Demo_73_FreeRTOS -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\cmsis_boot -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable\GCC -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\cmsis_lib\include -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable\GCC\ARM_CM4F -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\include -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\cmsis -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\cmsis_lib -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS -IE:\STM-NgoVinh\Demo_73_FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS">
+      <target file="queue.o" lastModified="1517ff34f56">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\queue.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="1517ff34e3d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="port.o" lastModified="1517ff34fa4">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="timers.o" lastModified="1517ff34d24">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\timers.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="heap_2.o" lastModified="1517ff3508e">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\portable\MemMang\heap_2.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="list.o" lastModified="1517ff34e8b">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\list.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1517ff34ec9">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1517ff34b60">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="croutine.o" lastModified="1517ff35001">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\croutine.c" lastModified="14235ec0ea0"/>
+      </target>
+      <target file="stm32_ub_led.o" lastModified="1517ff34bbd">
+         <source file="..\..\..\ub_lib\stm32_ub_led.c" lastModified="13cc415e9e0"/>
+      </target>
+      <target file="stm32_ub_freertos.o" lastModified="1517ff35040">
+         <source file="..\..\..\ub_lib\stm32_ub_freertos.c" lastModified="1437f672230"/>
+      </target>
+      <target file="main.o" lastModified="1517ff34c1b">
+         <source file="..\..\..\main.c" lastModified="15142683d56"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1517ff34c88">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="tasks.o" lastModified="1517ff34def">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\tasks.c" lastModified="1424ae7e9f0"/>
+      </target>
+   </processor>
+</history>

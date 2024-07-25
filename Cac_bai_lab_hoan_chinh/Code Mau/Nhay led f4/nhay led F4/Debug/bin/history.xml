@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=nhay led F4.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\nhay led F4 -TC:\CooCox\CoIDE\configuration\ProgramData\nhay led F4/arm-gcc-link.ld -g">
+      <target file="nhay led F4.elf" lastModified="14423e43ffb">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14423c6800c"/>
+         <source file="..\obj\main.o" lastModified="14423e43e18"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14423c682f0"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14423c68368"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14423c683eb"/>
+      </target>
+   </processor>
+</history>

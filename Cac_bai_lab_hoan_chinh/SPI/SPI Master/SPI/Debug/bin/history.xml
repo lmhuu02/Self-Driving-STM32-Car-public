@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.4 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=SPI.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\SPI -TC:\CooCox\CoIDE\configuration\ProgramData\SPI/arm-gcc-link.ld -g">
+      <target file="SPI.elf" lastModified="1515724bc20">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="151336e85e0"/>
+         <source file="..\obj\main.o" lastModified="1515724b450"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="151336e85e0"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="151336e85e0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="151336e85e0"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="151336e85e0"/>
+         <source file="..\obj\misc.o" lastModified="151336e85e0"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\Chuong trinh ARM\stm_lib /ID:\Chuong trinh ARM\stm_lib\inc /ID:\Chuong trinh ARM\cmsis_boot /ID:\ /ID:\Chuong trinh ARM /ID:\Chuong trinh ARM\cmsis_core">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="144d94ff2fe">
+      </source>
+      <source file="..\..\..\cmsis_core\core_cm0.h" lastModified="144d943b5ed">
+         <include file="..\..\..\cmsis_core\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_core\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="144d94ff8b1">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx_conf.h" lastModified="144d9503989">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="144d94ff943">
+         <include file="..\..\..\cmsis_core\core_cm0.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f0xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f0xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmInstr.h" lastModified="144d94ff89a">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="144d94ffbfc">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmFunc.h" lastModified="144d94ff611">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h" lastModified="144d943b232">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="144d943b242">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="144d95002a2">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="144d94ffa4d">
+      </source>
+   </includePath>
+</dependencies>

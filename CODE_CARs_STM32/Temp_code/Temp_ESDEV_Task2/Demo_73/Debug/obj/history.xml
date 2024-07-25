@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\cmsis -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\cmsis_lib -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\include -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable\GCC -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\cmsis_lib\include -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\cmsis_boot -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source\portable\GCC\ARM_CM4F -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib -ID:\MonHoc\2023\He thong thoi gian thuc\FreeRTOS\FreeRTOS\Demo_73_FreeRTOS\ub_lib\FreeRTOS\Source">
+      <target file="queue.o" lastModified="18adfc3df01">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\queue.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="18adfc3ddc5">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="port.o" lastModified="18adfc3df56">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="timers.o" lastModified="18adfc3dc9e">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\timers.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="heap_2.o" lastModified="18adfc3e05a">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\portable\MemMang\heap_2.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="list.o" lastModified="18adfc3de16">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\list.c" lastModified="14235ebd020"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="18adfc3de64">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="18adfc3dac7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="croutine.o" lastModified="18adfc3dfad">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\croutine.c" lastModified="14235ec0ea0"/>
+      </target>
+      <target file="stm32_ub_led.o" lastModified="18adfc3db44">
+         <source file="..\..\..\ub_lib\stm32_ub_led.c" lastModified="13cc415e9e0"/>
+      </target>
+      <target file="stm32_ub_freertos.o" lastModified="18adfc3dffc">
+         <source file="..\..\..\ub_lib\stm32_ub_freertos.c" lastModified="1437f672230"/>
+      </target>
+      <target file="main.o" lastModified="18adfc3dba3">
+         <source file="..\..\..\main.c" lastModified="18adfc3cf7f"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="18adfc3dc10">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1437f5c2d80"/>
+      </target>
+      <target file="tasks.o" lastModified="18adfc3dd4a">
+         <source file="..\..\..\ub_lib\FreeRTOS\Source\tasks.c" lastModified="1424ae7e9f0"/>
+      </target>
+   </processor>
+</history>

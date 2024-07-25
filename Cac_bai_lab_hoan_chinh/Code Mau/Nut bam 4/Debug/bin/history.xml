@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=Nut bam 4.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Nut bam 4 -TC:\CooCox\CoIDE\configuration\ProgramData\Nut bam 4/arm-gcc-link.ld -g">
+      <target file="Nut bam 4.elf" lastModified="144d9474a6b">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="144d9474782"/>
+         <source file="..\obj\main.o" lastModified="144d94747ba"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="144d94747c4"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="144d947481e"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="144d9474862"/>
+      </target>
+   </processor>
+</history>

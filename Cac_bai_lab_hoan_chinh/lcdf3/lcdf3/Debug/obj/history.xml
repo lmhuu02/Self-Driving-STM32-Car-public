@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F303VC -DSTM32F30X -IE:\STM-NgoVinh\Cac bai lab hoan chinh\lcdf3\cmsis_boot -IE:\STM-NgoVinh\Cac bai lab hoan chinh\lcdf3\cmsis_lib\include -IE:\STM-NgoVinh\Cac bai lab hoan chinh\lcdf3 -IE:\STM-NgoVinh\Cac bai lab hoan chinh\lcdf3\cmsis_lib -IE:\STM-NgoVinh\Cac bai lab hoan chinh\lcdf3\cmsis -IE:\STM-NgoVinh\Cac bai lab hoan chinh">
+      <target file="stm32f30x_gpio.o" lastModified="15142d46047">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="14f868d3020"/>
+      </target>
+      <target file="startup_stm32f30x.o" lastModified="15142d46112">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="14f868d3020"/>
+      </target>
+      <target file="system_stm32f30x_temp.o" lastModified="15142d460e3">
+         <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="14f868d3020"/>
+      </target>
+      <target file="main.o" lastModified="15142ef0351">
+         <source file="..\..\..\main.c" lastModified="15142eefe62"/>
+      </target>
+      <target file="stm32f30x_rcc.o" lastModified="15142d45fca">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="14f868d3020"/>
+      </target>
+   </processor>
+</history>

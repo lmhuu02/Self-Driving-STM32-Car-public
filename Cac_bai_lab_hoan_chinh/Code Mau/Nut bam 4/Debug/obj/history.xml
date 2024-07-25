@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Chuong trinh ARM\stm_lib -ID:\Chuong trinh ARM\stm_lib\inc -ID:\Chuong trinh ARM\cmsis_boot -ID:\ -ID:\Chuong trinh ARM -ID:\Chuong trinh ARM\cmsis_core">
+      <target file="system_stm32f0xx.o" lastModified="144d9474862">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="144d943b1e7"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="144d947481e">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="144d943b140"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="144d9474782">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="144d943b242"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="144d94747c4">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="144d943b16f"/>
+      </target>
+      <target file="main.o" lastModified="144d94747ba">
+         <source file="..\..\..\main.c" lastModified="144d9439b7e"/>
+      </target>
+   </processor>
+</history>

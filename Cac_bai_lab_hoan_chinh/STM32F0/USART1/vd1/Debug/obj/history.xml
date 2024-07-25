@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0\USART1\stm32_lib\inc -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0\USART1\stm32_lib -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0\USART1 -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0\USART1\cmsis_core -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0\USART1\cmsis_boot -ID:\NHOM SMT\BAI THUC HANH STM\STM32F0">
+      <target file="stm32f0xx_gpio.o" lastModified="14b617c8b4a">
+         <source file="..\..\..\stm32_lib\src\stm32f0xx_gpio.c" lastModified="1468e01885f"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="14b617c8a41">
+         <source file="..\..\..\stm32_lib\src\stm32f0xx_rcc.c" lastModified="1468e01886f"/>
+      </target>
+      <target file="stm32f0xx_usart.o" lastModified="14b617c8bd7">
+         <source file="..\..\..\stm32_lib\src\stm32f0xx_usart.c" lastModified="1468e018850"/>
+      </target>
+      <target file="system_stm32f0xx_temp.o" lastModified="14b617c8aed">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx_temp.c" lastModified="1468e0188ae"/>
+      </target>
+      <target file="main.o" lastModified="14b617d5d77">
+         <source file="..\..\..\main.c" lastModified="14b617d5a8a"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="14b617c8a9f">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="1468e01887f"/>
+      </target>
+   </processor>
+</history>

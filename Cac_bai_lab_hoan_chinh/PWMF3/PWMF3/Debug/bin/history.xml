@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=PWMF3.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\PWMF3 -TC:\CooCox\CoIDE\configuration\ProgramData\PWMF3/arm-gcc-link.ld -g">
+      <target file="PWMF3.elf" lastModified="1518076bde5">
+         <source file="..\obj\stm32f30x_rcc.o" lastModified="1518076ba1e"/>
+         <source file="..\obj\stm32f30x_gpio.o" lastModified="1518076ba6c"/>
+         <source file="..\obj\main.o" lastModified="1518076baaa"/>
+         <source file="..\obj\system_stm32f30x_temp.o" lastModified="1518076baf8"/>
+         <source file="..\obj\stm32f30x_tim.o" lastModified="1518076bbe2"/>
+         <source file="..\obj\startup_stm32f30x.o" lastModified="1518076bc02"/>
+      </target>
+   </processor>
+</history>

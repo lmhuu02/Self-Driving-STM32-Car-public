@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4 -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4\Dieu kien led tren Kit\cmsis_boot -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4\Dieu kien led tren Kit\cmsis -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4\Dieu kien led tren Kit -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4\Dieu kien led tren Kit\cmsis_lib\include -ID:\NHOM SMT\BAI THUC HANH STM\STM32f4\Dieu kien led tren Kit\cmsis_lib">
+      <target file="stm32f4xx_rcc.o" lastModified="15e2474bf73">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ae738b502"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15e2474c04d">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14ae738b4c4"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="15e2474bffc">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ae738b447"/>
+      </target>
+      <target file="main.o" lastModified="15e2474bec5">
+         <source file="..\..\..\main.c" lastModified="14ae73f3cbc"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15e2474be1d">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14ae738b486"/>
+      </target>
+   </processor>
+</history>

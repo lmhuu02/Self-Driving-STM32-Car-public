@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Ngay LED.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Ngay LED -TC:\CooCox\CoIDE\configuration\ProgramData\Ngay LED/arm-gcc-link.ld -g">
+      <target file="Ngay LED.elf" lastModified="14ae8e0294a">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14ae8d97aee"/>
+         <source file="..\obj\main.o" lastModified="14ae8e025d8"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14ae8d97d32"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14ae8d97e36"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14ae8d97f1c"/>
+      </target>
+   </processor>
+</history>
